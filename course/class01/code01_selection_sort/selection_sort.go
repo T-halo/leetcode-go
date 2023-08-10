@@ -1,4 +1,4 @@
-package code01_selection_sort
+package course
 
 // 选择排序
 //
