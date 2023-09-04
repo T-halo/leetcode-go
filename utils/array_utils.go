@@ -10,3 +10,17 @@ func GenerateRandomArray(minSize, maxSize, minValue, maxValue int64) []int64 {
 	}
 	return array
 }
+
+type Int64Slice []int64
+
+func (arr Int64Slice) Len() int {
+	return len(arr)
+}
+
+func (arr Int64Slice) Less(i, j int) bool {
+	return arr[i] < arr[j]
+}
+
+func (arr Int64Slice) Swap(i, j int) {
+	arr[i], arr[j] = arr[j], arr[i]
+}
