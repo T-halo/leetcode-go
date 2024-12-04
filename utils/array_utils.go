@@ -1,6 +1,8 @@
 package utils
 
-import "math/rand"
+import (
+	"math/rand"
+)
 
 func GenerateRandomArray(minSize, maxSize, minValue, maxValue int64) []int64 {
 	n := rand.Int63n(maxSize-minSize+1) + minSize
